@@ -1,0 +1,92 @@
+:root {
+    --dark: #292C35;
+    --light: #F1F1F1;
+    --label: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 7.6rem;
+}
+
+/* STYLIZATION AND RESPONSIBILITY */
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    text-align: center;
+
+    background-color: var(--dark);
+    color: var(--light);
+
+    font-size: 1rem; 
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+.theme-swap {
+    background-color: var(--label);
+
+    width:  23rem;
+    height: 10rem;
+
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    padding: 0.6rem;
+    border-radius: 5rem;
+}
+
+#switch-theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 500ms;
+}
+
+#switch-theme:hover {
+    filter: brightness(1.1);
+}
+
+#light-theme {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ANIMATION CHANGE OF THEMES */
+.container.active {
+    background-color: var(--light);
+    color: var(--dark);
+
+    transition: 1s;
+}
+
+.theme-swap.active #dark-theme {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.theme-swap.active #switch-theme {
+    transform: translateX(-13rem);
+    transition: transform 500ms;
+}
+
+.theme-swap.active #light-theme {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(-13rem);
+}
