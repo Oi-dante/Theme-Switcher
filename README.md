@@ -14,7 +14,7 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
   <img src="https://img.shields.io/badge/CSS3-white?style=for-the-badge&logo=css3&logoColor=1572B6"/>
 </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JS" target="_blank">
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
   <img src="https://img.shields.io/badge/JS-black?style=for-the-badge&logo=javaScript&logoColor=f7df1e"/>
 </a>
 
